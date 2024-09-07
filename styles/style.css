@@ -2,7 +2,8 @@ html {
   height: 100%;
 }
 body {
-  background: linear-gradient( cyan, 60%, black);
+  background-image: url(./img/background.jpg);
+  background-size: cover; 
   margin: 0;
   display: flex;
   flex-direction: column;
@@ -12,7 +13,7 @@ body {
   width: 100%;
 }
 .wrapper {
-  background: linear-gradient( cyan, 60%, black);
+  /* background: linear-gradient( cyan, 60%, black); */
   display: flex;
   flex-wrap: wrap;
   flex-direction: column;
@@ -57,3 +58,12 @@ h1 {
   width: fit-content;
 }
 
+input:invalid + span:after {
+  content: "✖";
+  padding-left: 5px;
+}
+
+input:valid + span:after {
+  content: "✓";
+  padding-left: 5px;
+}

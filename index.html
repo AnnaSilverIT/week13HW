@@ -9,8 +9,9 @@
 <body>
   <h1>Дни до вашего дня рождения</h1>
   <div class="wrapper">
-    <label class="label" for="input">Введите дату рождения:</label>
-    <input type="date" id="input">
+    <label class="label" for="input">Введите ближайшую дату вашего дня рождения:</label>
+    <input type="date" id="input" required pattern="[0-9]{2}-[0-9]{2}-[0-9]{4}" />
+    <span class="validity"></span>
     <button class="button">Посчитать</button>
   </div>
   <div class="result"></div>
