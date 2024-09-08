@@ -13,7 +13,8 @@ button.onclick = () => {
   let newDate = document.createElement('p');
   console.log(diffInDays)
   newDate.className = 'newDate'
-  newDate.innerText = 'До вашего дня рождения осталось: ' + diffInDays + ' дней!'
+  diffInDays.isEmpty ?
+  newDate.innerText = 'До вашего дня рождения осталось: ' + diffInDays + ' дней!' : newDate.innerText = 'Пожалуйста, введите дату!';
   input.value = ''
   result.appendChild(newDate)
   }
